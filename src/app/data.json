@@ -1,0 +1,38 @@
+{
+  "supermarkets":[
+    {
+      "id":1,
+      "name":"Rami Levi",
+      "firstBrach":"Jabotinskiy 31,Ramat Gan",
+      "secondBrach":"Jabotinskiy 31,Ramat Gan",
+      "thirdBrach":"Jabotinskiy 31,Ramat Gan",
+      "fourthBrach":"Jabotinskiy 31,Ramat Gan"
+    },
+    {
+      "id":2,
+      "name":"Mega",
+      "firstBrach":"Nahalat Benyamin 21,Tel Aviv",
+      "secondBrach":"Nahalat Benyamin 21,Tel Aviv",
+      "thirdBrach":"Nahalat Benyamin 21,Tel Aviv",
+      "fourthBrach":"Nahalat Benyamin 21,Tel Aviv"
+    },
+    {
+      "id":3,
+      "name":"Yainot Bitan",
+      "firstBrach":"Nahalat Benyamin 21,Tel Aviv",
+      "secondBrach":"Nahalat Benyamin 21,Tel Aviv",
+      "thirdBrach":"Nahalat Benyamin 21,Tel Aviv",
+      "fourthBrach":"Nahalat Benyamin 21,Tel Aviv"
+    },
+    {
+      "id":4,
+      "name":"Supersal",
+      "firstBrach":"Nahalat Benyamin 21,Tel Aviv",
+      "secondBrach":"Nahalat Benyamin 21,Tel Aviv",
+      "thirdBrach":"Nahalat Benyamin 21,Tel Aviv",
+      "fourthBrach":"Nahalat Benyamin 21,Tel Aviv"
+    }
+  ]
+
+
+}

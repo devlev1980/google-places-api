@@ -1,0 +1,57 @@
+<div class="container">
+  <mat-form-field >
+    <input  matInput type="text"
+            [(ngModel)]="address"
+            (setAddress) = "getAddress($event)"
+            (FormatAddress)="getFormattedAddress($event)"
+            (street_number) = 'street_number=$event'
+            (street)= 'street=$event'
+            (city)= 'city=$event'
+            (state)='state=$event'
+            (district)='district=$event'
+            (country)='country=$event'
+            (postal_code)='postal_code=$event'
+            (lat)='lat=$event'
+            (lng)='lng=$event'
+            (adr_address)='adr_address=$event'
+            (name)='name=$event'
+            (place_id)='place_id=$event'
+            (types)='types=$event'
+            (url)='url=$event'
+            (utc_offset)='utc_offset=$event'
+            (vicinity)='vicinity=$event'
+            (photos)='photos=$event'
+            (CountryCodes)='CountryCodes=$event'
+            id="autocomplete"
+            angularGooglePlace/>
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="sendData(originalPlace)">Send</button>
+
+
+</div>
+
+<div class="cards" *ngFor="let super of superMarkets" >
+  <!--<div class="results" *ngFor="let i of resultFromGetDistance">-->
+  <div class="results" >
+  <mat-card class="super-card"  >
+    <mat-card-header >
+      <div mat-card-avatar class="example-header-image">   <img src="{{super.icon}}" alt=""></div>
+      <mat-card-subtitle></mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-title class="title">{{super.name}} </mat-card-title>
+
+    <mat-card-content >
+       <p>Address: {{super.vicinity}}</p>
+       <p>Rating: {{super.rating}}</p>
+       <p>Place_id: {{super.place_id}}</p>
+      <div *ngFor="let i of resultFromGetDistance">
+{{i|json}}
+      </div>
+      <!--<p  >Distance: {{result|json}</p>-->
+      <!--<p  >Distance: {{resultFromGetDistance[super].rows|json}}</p>-->
+      </mat-card-content>
+  </mat-card>
+  </div>
+</div>
+
+
